@@ -6,6 +6,7 @@ import LookbookSection from './components/home/LookbookSection';
 import HowToRentSection from './components/home/HowToRentSection';
 import StoryAndReservation from './components/home/StoryAndReservation';
 import BlogAndContact from './components/home/BlogAndContact';
+import LocationSection from './components/home/LocationSection';
 import ProductDetailModal from './components/catalog/ProductDetailModal';
 import FloatingWhatsApp from './components/ui/FloatingWhatsApp';
 
@@ -37,6 +38,7 @@ function App() {
         <LookbookSection />
         <HowToRentSection />
         <StoryAndReservation onSelectItem={handleSelectItem} />
+        <LocationSection />
         <BlogAndContact />
       </main>
 
