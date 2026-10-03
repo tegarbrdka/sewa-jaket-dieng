@@ -43,7 +43,7 @@ const StoryAndReservation = ({ onSelectItem }) => {
           <ScrollReveal direction="fade-right" className="w-full xl:w-1/2">
             <h3 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark leading-none mb-3 md:mb-4">IMPORT &<br/>PREMIUM</h3>
             <p className="text-dark/80 text-xs md:text-sm mb-4 md:mb-6 border-l-4 border-accent pl-3">
-              Kami menghadirkan koleksi jaket import terbaik — dari brand internasional ternama — langsung ke tangan petualang Anda di Dieng. Bukan jaket sembarangan.
+              Kami menyewakan koleksi jaket import terbaik — dari brand internasional ternama — untuk menemani petualangan Anda di Dieng. Bukan jaket sembarangan.
             </p>
             <h3 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark leading-none">KUALITAS DUNIA<br/>HARGA<br/>TERJANGKAU</h3>
           </ScrollReveal>
