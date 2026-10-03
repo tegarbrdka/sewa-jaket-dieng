@@ -14,7 +14,7 @@ const ProductDetailModal = ({ item, onClose }) => {
 
   if (!item) return null;
 
-  const adminNumber = '6281234567890';
+  const adminNumber = '6285728313331';
   const totalPrice = item.pricePerDay * rentalDays;
 
   const handleWhatsAppBooking = () => {

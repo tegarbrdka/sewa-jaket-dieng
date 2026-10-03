@@ -25,7 +25,7 @@ const FloatingWhatsApp = () => {
       }`}
     >
       <a 
-        href="https://wa.me/6281234567890" 
+        href="https://wa.me/6285728313331?text=Halo%20Outfit%20Dieng!%20👋%20Saya%20tertarik%20sewa%20jaket%20import%20premium." 
         target="_blank" 
         rel="noreferrer"
         className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_25px_rgba(37,211,102,0.6)] hover:-translate-y-1 transition-all duration-300 group"

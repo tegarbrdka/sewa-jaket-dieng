@@ -85,7 +85,7 @@ const Navbar = () => {
           {/* Desktop WA Button */}
           <div className="hidden md:flex items-center">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Outfit%20Dieng,%20saya%20mau%20tanya%20sewa%20jaket"
+              href="https://wa.me/6285728313331?text=Halo%20Outfit%20Dieng,%20saya%20mau%20tanya%20sewa%20jaket"
               target="_blank"
               rel="noreferrer"
               className="bg-[#25D366] hover:bg-[#1DA851] text-white font-heading font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300 hover:shadow-[#25D366]/30 transform hover:-translate-y-0.5"
@@ -174,7 +174,7 @@ const Navbar = () => {
             {/* Bottom — WA CTA */}
             <div className="px-6 py-6 border-t border-white/10 bg-white/[0.02]">
               <a
-                href="https://wa.me/6281234567890?text=Halo%20Outfit%20Dieng,%20saya%20mau%20tanya%20sewa%20jaket"
+                href="https://wa.me/6285728313331?text=Halo%20Outfit%20Dieng,%20saya%20mau%20tanya%20sewa%20jaket"
                 target="_blank"
                 rel="noreferrer"
                 onClick={closeMenu}

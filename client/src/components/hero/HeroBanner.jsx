@@ -124,7 +124,7 @@ const HeroBanner = () => {
               Jelajahi Koleksi
             </a>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Outfit%20Dieng,%20saya%20tertarik%20sewa%20jaket"
+              href="https://wa.me/6285728313331?text=Halo%20Outfit%20Dieng,%20saya%20tertarik%20sewa%20jaket"
               target="_blank"
               rel="noreferrer"
               className="flex-1 flex items-center justify-center gap-2 border border-white/25 text-white/80 font-heading font-bold uppercase text-[11px] tracking-[0.1em] py-3.5 transition-all duration-200"
@@ -247,7 +247,7 @@ const HeroBanner = () => {
               </svg>
             </a>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Outfit%20Dieng,%20saya%20tertarik%20sewa%20jaket"
+              href="https://wa.me/6285728313331?text=Halo%20Outfit%20Dieng,%20saya%20tertarik%20sewa%20jaket"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2.5 border border-white/20 hover:border-white/40 text-white/80 hover:text-white font-heading font-bold uppercase text-[11px] tracking-[0.12em] px-7 py-4 transition-all duration-200 hover:bg-white/5"

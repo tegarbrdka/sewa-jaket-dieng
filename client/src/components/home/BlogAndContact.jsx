@@ -119,7 +119,7 @@ const BlogAndContact = () => {
           {/* WhatsApp buttons */}
           <ScrollReveal direction="fade-up" delay={1}>
             <div className="space-y-2.5 md:space-y-3">
-              <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="relative bg-[#25D366] hover:bg-[#1DA851] text-white rounded-xl px-4 md:px-6 py-3.5 md:py-4 font-heading font-bold text-base md:text-lg flex items-center gap-3 md:gap-4 transition-all duration-300 shadow-lg hover:shadow-[#25D366]/30 hover:-translate-y-0.5 group overflow-hidden active:scale-[0.98]">
+              <a href="https://wa.me/6285728313331" target="_blank" rel="noreferrer" className="relative bg-[#25D366] hover:bg-[#1DA851] text-white rounded-xl px-4 md:px-6 py-3.5 md:py-4 font-heading font-bold text-base md:text-lg flex items-center gap-3 md:gap-4 transition-all duration-300 shadow-lg hover:shadow-[#25D366]/30 hover:-translate-y-0.5 group overflow-hidden active:scale-[0.98]">
                 <div className="relative">
                   <FaWhatsapp className="text-2xl md:text-3xl" />
                   <span className="absolute -top-1 -right-1 w-2.5 h-2.5 md:w-3 md:h-3 bg-green-300 rounded-full pulse-ring" />
@@ -130,7 +130,7 @@ const BlogAndContact = () => {
                 </div>
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
               </a>
-              <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="bg-transparent border border-white/20 hover:bg-white/5 text-white rounded-xl px-4 md:px-6 py-3.5 md:py-4 font-heading font-bold flex items-center gap-3 md:gap-4 transition-all duration-300 group active:scale-[0.98]">
+              <a href="https://wa.me/6285728313331" target="_blank" rel="noreferrer" className="bg-transparent border border-white/20 hover:bg-white/5 text-white rounded-xl px-4 md:px-6 py-3.5 md:py-4 font-heading font-bold flex items-center gap-3 md:gap-4 transition-all duration-300 group active:scale-[0.98]">
                 <FaWhatsapp className="text-xl md:text-2xl" />
                 <div className="flex-1 min-w-0">
                   <p className="leading-none text-sm md:text-base">CHAT ADMIN 2</p>

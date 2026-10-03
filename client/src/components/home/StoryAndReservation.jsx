@@ -132,7 +132,7 @@ const StoryAndReservation = ({ onSelectItem }) => {
               <div className="mt-3 md:mt-4 flex items-center justify-between border-t border-white/10 pt-3 md:pt-4">
                 <span className="font-heading font-bold text-white/50 text-[10px] md:text-xs uppercase">TANYA ADALAH GRATIS →</span>
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%20Outfit%20Dieng,%20saya%20mau%20tanya%20sewa%20jaket"
+                  href="https://wa.me/6285728313331?text=Halo%20Outfit%20Dieng,%20saya%20mau%20tanya%20sewa%20jaket"
                   target="_blank"
                   rel="noreferrer"
                   className="bg-[#25D366] hover:bg-[#1DA851] text-white font-heading font-bold text-[10px] md:text-xs uppercase px-4 md:px-5 py-2 md:py-2.5 rounded-full transition-all duration-300 shadow-md flex items-center gap-1.5"

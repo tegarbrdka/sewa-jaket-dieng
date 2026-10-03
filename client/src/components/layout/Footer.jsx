@@ -1,5 +1,6 @@
 import React from 'react';
-import { FiInstagram, FiFacebook, FiYoutube, FiTwitter, FiSend } from 'react-icons/fi';
+import { FiInstagram, FiSend } from 'react-icons/fi';
+import { SiTiktok } from 'react-icons/si';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,20 +25,21 @@ const Footer = () => {
             </a>
             <p className="text-white/30 text-[10px] md:text-xs font-mono uppercase tracking-widest mt-1">— SEJAK 2026 —</p>
             <p className="text-white/50 text-xs md:text-sm mt-3 md:mt-4 leading-relaxed">
-              Penyewaan jaket terlengkap di Dataran Tinggi Dieng. Kenyamanan & kehangatan untuk petualangan Anda.
+              Penyewaan jaket <strong className="text-white/70">import premium</strong> terlengkap di Dataran Tinggi Dieng. Kehangatan kelas dunia untuk petualangan Anda.
             </p>
 
             {/* Social Media */}
             <div className="flex gap-2.5 md:gap-3 mt-4 md:mt-6">
               {[
-                { icon: <FiFacebook size={16} />, href: '#' },
-                { icon: <FiInstagram size={16} />, href: '#' },
-                { icon: <FiYoutube size={16} />, href: '#' },
-                { icon: <FiTwitter size={16} />, href: '#' },
+                { icon: <FiInstagram size={16} />, href: 'https://instagram.com/outfitdieng', label: 'Instagram' },
+                { icon: <SiTiktok size={15} />, href: 'https://tiktok.com/@outfitdieng', label: 'TikTok' },
               ].map((social, i) => (
                 <a
                   key={i}
                   href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={social.label}
                   className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:text-accent hover:border-accent/30 hover:bg-accent/10 transition-all duration-300"
                 >
                   {social.icon}
@@ -82,7 +84,7 @@ const Footer = () => {
               </div>
               <div className="flex justify-between items-center bg-white/5 rounded-lg px-3 md:px-4 py-2.5 md:py-3 border border-white/5">
                 <span className="text-white/60 text-[11px] md:text-sm">Telp / WA</span>
-                <span className="text-white font-mono font-bold text-[11px] md:text-sm">0812-3456-7890</span>
+                <span className="text-white font-mono font-bold text-[11px] md:text-sm">0857-2831-3331</span>
               </div>
             </div>
           </div>
