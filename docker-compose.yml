@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mariadb:10.6
+    container_name: sewa-jaket-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootpassword}
+      MARIADB_DATABASE: ${DB_NAME:-sewa_jaket_dieng}
+      MARIADB_USER: ${DB_USER:-sewa_user}
+      MARIADB_PASSWORD: ${DB_PASSWORD:-sewa_password}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./server/src/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./server/src/db/seed.sql:/docker-entrypoint-initdb.d/02-seed.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-rootpassword}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: sewa-jaket-server
+    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME:-sewa_jaket_dieng}
+      DB_USER: ${DB_USER:-sewa_user}
+      DB_PASSWORD: ${DB_PASSWORD:-sewa_password}
+      MIDTRANS_SERVER_KEY: ${MIDTRANS_SERVER_KEY}
+      MIDTRANS_CLIENT_KEY: ${MIDTRANS_CLIENT_KEY}
+      MIDTRANS_IS_PRODUCTION: "false"
+      PORT: 5000
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server/src:/app/src
+      - ./server/uploads:/app/uploads
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: sewa-jaket-client
+    restart: unless-stopped
+    environment:
+      VITE_API_URL: http://localhost:5000/api
+      VITE_MIDTRANS_CLIENT_KEY: ${MIDTRANS_CLIENT_KEY}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client/src:/app/src
+      - ./client/public:/app/public
+      - ./client/index.html:/app/index.html
+    depends_on:
+      - server
+
+volumes:
+  mysql_data:

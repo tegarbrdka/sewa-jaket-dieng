@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Environment
+.env
+
+# Build output
+client/dist/
+
+# Uploads
+server/uploads/ktp/*
+!server/uploads/ktp/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker
+mysql_data/
+
+# Logs
+*.log
+npm-debug.log*
+
+.vercel

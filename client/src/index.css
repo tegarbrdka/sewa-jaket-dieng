@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body overflow-x-hidden m-0 p-0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-accent text-white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-dark-surface;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-accent rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-light;
+}
+
+/* Text Outlines for Hero Typography */
+.text-outline-accent {
+  -webkit-text-stroke: 1px #F36F38;
+  color: transparent;
+}
+.text-outline-dark {
+  -webkit-text-stroke: 1px #1D1C38;
+  color: transparent;
+}
+
+/* Lantern Animation */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-float-delayed {
+  animation: float 7s ease-in-out infinite 1s;
+}
+
+/* Scroll Reveal Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.reveal.visible {
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible.fade-up { animation-name: fadeInUp; }
+.reveal.visible.fade-left { animation-name: fadeInLeft; }
+.reveal.visible.fade-right { animation-name: fadeInRight; }
+.reveal.visible.scale-in { animation-name: scaleIn; }
+
+/* Stagger delays for children */
+.reveal-delay-1 { animation-delay: 0.1s !important; }
+.reveal-delay-2 { animation-delay: 0.2s !important; }
+.reveal-delay-3 { animation-delay: 0.3s !important; }
+.reveal-delay-4 { animation-delay: 0.4s !important; }
+
+/* Gradient glow for buttons */
+.glow-accent {
+  box-shadow: 0 0 20px rgba(243, 111, 56, 0.3), 0 0 60px rgba(243, 111, 56, 0.1);
+}
+.glow-accent:hover {
+  box-shadow: 0 0 30px rgba(243, 111, 56, 0.5), 0 0 80px rgba(243, 111, 56, 0.2);
+}
+
+/* Pulse ring for online indicator */
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: #25D366;
+  animation: pulseRing 1.5s ease-out infinite;
+}
+
+/* ─── MOBILE TOUCH OPTIMIZATIONS ─── */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile menu slide-over */
+@keyframes slideOverIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@keyframes slideOverOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+.slide-over-enter {
+  animation: slideOverIn 0.35s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+.slide-over-exit {
+  animation: slideOverOut 0.25s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+/* Bottom sheet modal */
+@keyframes sheetUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.sheet-enter {
+  animation: sheetUp 0.4s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+/* Fade backdrop */
+@keyframes fadeBackdrop {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-backdrop {
+  animation: fadeBackdrop 0.3s ease-out forwards;
+}
+
+/* Mobile-friendly touch targets */
+@media (max-width: 768px) {
+  button, a, [role="button"] {
+    min-height: 44px;
+  }
+}
+
