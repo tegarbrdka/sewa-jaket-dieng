@@ -130,14 +130,7 @@ const BlogAndContact = () => {
                 </div>
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
               </a>
-              <a href="https://wa.me/6285728313331" target="_blank" rel="noreferrer" className="bg-transparent border border-white/20 hover:bg-white/5 text-white rounded-xl px-4 md:px-6 py-3.5 md:py-4 font-heading font-bold flex items-center gap-3 md:gap-4 transition-all duration-300 group active:scale-[0.98]">
-                <FaWhatsapp className="text-xl md:text-2xl" />
-                <div className="flex-1 min-w-0">
-                  <p className="leading-none text-sm md:text-base">CHAT ADMIN 2</p>
-                  <p className="text-white/40 text-[10px] md:text-xs font-normal mt-0.5">Backup • Respon 5 menit</p>
-                </div>
-                <FiArrowRight className="opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all flex-shrink-0" />
-              </a>
+
             </div>
           </ScrollReveal>
 
