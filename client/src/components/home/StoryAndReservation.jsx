@@ -21,9 +21,9 @@ const StoryAndReservation = ({ onSelectItem }) => {
       <div className="w-full md:w-1/2 p-6 md:p-16 lg:p-24 flex flex-col justify-center">
         <ScrollReveal direction="fade-left">
           <h2 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark mb-1">
-            OUR STORY <span className="text-base md:text-xl font-normal ml-1 md:ml-2 tracking-wide">(WONOSOBO LOCAL pride)</span>
+            OUR STORY <span className="text-base md:text-xl font-normal ml-1 md:ml-2 tracking-wide">(DIENG PREMIUM EXPERIENCE)</span>
           </h2>
-          <p className="font-heading font-medium tracking-widest text-[10px] md:text-sm text-dark mb-6 md:mb-8">TENTANG OUTFIT DIENG - ASLI WONOSOBO</p>
+          <p className="font-heading font-medium tracking-widest text-[10px] md:text-sm text-dark mb-6 md:mb-8">TENTANG OUTFIT DIENG — JAKET IMPORT PREMIUM</p>
         </ScrollReveal>
 
         <div className="flex flex-col xl:flex-row gap-6 md:gap-8 items-start">
@@ -41,11 +41,11 @@ const StoryAndReservation = ({ onSelectItem }) => {
           </ScrollReveal>
 
           <ScrollReveal direction="fade-right" className="w-full xl:w-1/2">
-            <h3 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark leading-none mb-3 md:mb-4">DIBUAT OLEH<br/>LOKAL</h3>
+            <h3 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark leading-none mb-3 md:mb-4">IMPORT &<br/>PREMIUM</h3>
             <p className="text-dark/80 text-xs md:text-sm mb-4 md:mb-6 border-l-4 border-accent pl-3">
-              Kualitas dan pelayanan kami adalah cerminan dari semangat lokal Wonosobo. Semua jaket dirawat dan disiapkan langsung oleh ahlinya.
+              Kami menghadirkan koleksi jaket import terbaik — dari brand internasional ternama — langsung ke tangan petualang Anda di Dieng. Bukan jaket sembarangan.
             </p>
-            <h3 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark leading-none">KENYAMANAN &<br/>KEHANGATAN<br/>DI SETIAP SUDUT</h3>
+            <h3 className="font-heading text-2xl md:text-4xl font-bold uppercase text-dark leading-none">KUALITAS DUNIA<br/>HARGA<br/>TERJANGKAU</h3>
           </ScrollReveal>
         </div>
 
