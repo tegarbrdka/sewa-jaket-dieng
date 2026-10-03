@@ -76,7 +76,7 @@ const StoryAndReservation = ({ onSelectItem }) => {
           <ScrollReveal direction="fade-up" className="w-full xl:w-1/3">
             <div className="w-full aspect-video md:aspect-square rounded-xl overflow-hidden relative border border-white/10 group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63275.76!2d109.89!3d-7.21!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7015e7e7e7e7e7%3A0x0!2sWonosobo%2C+Central+Java!5e0!3m2!1sen!2sid!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7208989710457!2d109.94328597725267!3d-7.272566892734474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e700b1b928d2c1f%3A0x9f5228741c9ebc29!2sOUTFIT%20DIENG%20SEWA%20JAKET!5e0!3m2!1sid!2sid!4v1791052285514!5m2!1sid!2sid"
                 className="w-full h-full border-0 grayscale group-hover:grayscale-0 transition-all duration-700"
                 allowFullScreen=""
                 loading="lazy"
@@ -86,7 +86,7 @@ const StoryAndReservation = ({ onSelectItem }) => {
                 📍 Wonosobo, Jawa Tengah
               </div>
             </div>
-            <a href="https://maps.google.com/?q=Wonosobo+Jawa+Tengah" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-accent font-heading font-bold text-xs md:text-sm mt-2 md:mt-3 hover:underline group">
+            <a href="https://maps.app.goo.gl/search?q=OUTFIT+DIENG+SEWA+JAKET" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-accent font-heading font-bold text-xs md:text-sm mt-2 md:mt-3 hover:underline group">
               GET DIRECTIONS
               <span className="group-hover:translate-x-1 transition-transform">→</span>
             </a>
