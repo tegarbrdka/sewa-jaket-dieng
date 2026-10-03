@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 
 // Ensure destination exists
-const uploadDir = path.join(__dirname, '../../uploads/ktp');
+const uploadDir = process.env.VERCEL ? '/tmp/uploads/ktp' : path.join(__dirname, '../../uploads/ktp');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
