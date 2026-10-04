@@ -6,22 +6,22 @@ const HowToRentSection = () => {
   const steps = [
     {
       number: '01',
-      title: 'PILIH JAKET',
-      desc: 'Jelajahi koleksi Puffer, Windbreaker, Hardshell, & Oversize sesuai selera dan kebutuhan suhu Anda.',
-      icon: <FiSearch className="text-xl md:text-3xl text-accent" />,
-      accent: 'from-accent/20 to-accent/5',
-    },
-    {
-      number: '02',
-      title: 'KONFIRMASI VIA WA',
-      desc: 'Klik tombol WhatsApp untuk langsung terhubung dengan admin. Tentukan tanggal sewa dan ukuran.',
+      title: 'HUBUNGI ADMIN',
+      desc: 'Langsung chat WhatsApp atau datang ke toko kami di Wonosobo. Ceritakan kebutuhan jaket & tanggal sewa Anda.',
       icon: <FiMessageSquare className="text-xl md:text-3xl text-green-400" />,
       accent: 'from-green-500/20 to-green-500/5',
     },
     {
+      number: '02',
+      title: 'TENTUKAN PILIHAN',
+      desc: 'Admin akan bantu pilihkan jaket yang pas — ukuran, jenis, dan stok tersedia. Tanpa ribet, tanpa form online.',
+      icon: <FiSearch className="text-xl md:text-3xl text-accent" />,
+      accent: 'from-accent/20 to-accent/5',
+    },
+    {
       number: '03',
       title: 'AMBIL & PAKAI',
-      desc: 'Ambil jaket langsung di toko Wonosobo/Dieng atau minta layanan antar. Bayar mudah di tempat.',
+      desc: 'Ambil langsung di toko Wonosobo/Dieng atau minta layanan antar. Bayar di tempat, jaket langsung siap pakai.',
       icon: <FiMapPin className="text-xl md:text-3xl text-orange-400" />,
       accent: 'from-orange-500/20 to-orange-500/5',
     }
@@ -47,7 +47,7 @@ const HowToRentSection = () => {
               CARA SEWA JAKET <span className="text-accent">DIENG</span>
             </h2>
             <p className="text-white/50 text-xs md:text-sm mt-2 md:mt-3">
-              Hanya 3 langkah praktis untuk mendapatkan jaket hangat & stylish.
+              Cukup hubungi admin atau datang langsung — tidak perlu daftar online.
             </p>
           </ScrollReveal>
         </div>

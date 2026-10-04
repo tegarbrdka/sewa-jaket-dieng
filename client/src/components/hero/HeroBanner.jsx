@@ -73,8 +73,8 @@ const HeroBanner = () => {
             >
               DIENG
             </span>
-            <span className="block font-normal uppercase text-white/45 tracking-[0.15em] text-sm mt-2">
-              Hangat · Stylish · Siap Pakai
+            <span className="block font-bold uppercase text-white text-4xl" style={{ letterSpacing: '-0.02em', lineHeight: 1 }}>
+              VIA WONOSOBO
             </span>
           </h1>
         </div>
@@ -205,10 +205,10 @@ const HeroBanner = () => {
               DIENG
             </span>
             <span
-              className="block font-normal uppercase text-white/50 tracking-[0.18em] mt-2"
-              style={{ fontSize: 'clamp(0.85rem, 2vw, 1.4rem)' }}
+              className="block font-bold uppercase text-white"
+              style={{ fontSize: 'clamp(3rem, 8.5vw, 7.5rem)', letterSpacing: '-0.02em', lineHeight: 1 }}
             >
-              Hangat · Stylish · Siap Pakai
+              VIA WONOSOBO
             </span>
           </h1>
         </div>

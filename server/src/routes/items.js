@@ -23,7 +23,7 @@ router.get('/available', async (req, res, next) => {
 router.get('/', async (req, res, next) => {
   try {
     const { category } = req.query;
-    let query = 'SELECT * FROM items WHERE status = "active"';
+    let query = "SELECT * FROM items WHERE status = 'active'";
     const params = [];
 
     if (category) {
