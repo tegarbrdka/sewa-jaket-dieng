@@ -51,35 +51,22 @@ const Navbar = () => {
               alt="Outfit Dieng"
               className="h-10 md:h-20 w-auto object-contain rounded-md"
             />
-            <span className="hidden md:block text-[10px] tracking-widest text-white/60 md:text-dark/70 font-semibold uppercase leading-tight max-w-[140px]">
+            <span className="hidden md:block text-[10px] tracking-widest text-white/70 font-semibold uppercase leading-tight max-w-[140px]">
               Outfit Dieng<br />Wonosobo
             </span>
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex flex-1 justify-between items-center px-4 md:px-12 lg:px-20">
-            <div className="flex space-x-4 lg:space-x-8">
-              {navLinksDay.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-dark hover:text-accent transition-colors font-display text-base lg:text-lg tracking-wide font-medium"
-                >
-                  {link.name.toUpperCase()}
-                </a>
-              ))}
-            </div>
-            <div className="flex space-x-4 lg:space-x-8">
-              {navLinksNight.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-white hover:text-accent transition-colors font-display text-base lg:text-lg tracking-wide font-medium"
-                >
-                  {link.name.toUpperCase()}
-                </a>
-              ))}
-            </div>
+          <div className="hidden md:flex items-center justify-center space-x-6 lg:space-x-10 mx-auto px-4">
+            {allLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-white/80 hover:text-accent transition-colors font-display text-sm lg:text-base tracking-wider font-medium whitespace-nowrap"
+              >
+                {link.name.toUpperCase()}
+              </a>
+            ))}
           </div>
 
           {/* Desktop WA Button */}
